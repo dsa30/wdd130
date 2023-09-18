@@ -1,3 +1,20 @@
+main {
+  max-width: 840px;
+}
+
+aside {
+  margin: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: steelblue;
+  color: white;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
 nav {
   background-color: steelblue;
   padding: 10px;
@@ -13,7 +30,7 @@ h1 {
   color: steelblue;
 }
 
-img {
+main img {
   width: 150px;
   height: auto;
   border: 1px solid steelblue;
@@ -22,5 +39,11 @@ img {
 }
 
 p {
-  padding: 10px;
+  padding: 0;
+}
+
+footer {
+  margin-top: 50px;
+  border-top: 1px solid #000;
+  text-align: center;
 }
