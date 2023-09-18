@@ -1,3 +1,4 @@
 {
-  "auto-close-tag.enableAutoCloseSelfClosingTag": false
+  "auto-close-tag.enableAutoCloseSelfClosingTag": false,
+  "liveServer.settings.port": 5501
 }
