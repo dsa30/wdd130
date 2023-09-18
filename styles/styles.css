@@ -9,6 +9,11 @@ nav a {
   padding: 20px;
 }
 
+
+main {
+  max-width: 840px;
+}
+
 h1 {
   color: steelblue;
 }
@@ -19,10 +24,6 @@ img {
   border: 1px solid steelblue;
   padding: 2px;
   box-shadow: 0 0 30px gray;
-}
-
-main {
-  max-width: 840px;
 }
 
 aside {
