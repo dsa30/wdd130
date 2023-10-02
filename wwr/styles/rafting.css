@@ -19,7 +19,8 @@
 body {
   font-family: var(--paragraph-font);
   max-width: 1200px;
-  padding: 20px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,6 +64,12 @@ article img {
   float: right;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .sociallinks a,
 header nav li a {
   text-decoration:  none;
@@ -70,4 +77,42 @@ header nav li a {
 
 .sociallinks img {
   width: 40px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 10px 0;
+}
+
+header img {
+  width: 100px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  color: var(--nav-link-color);
+}
+
+.history {
+  background-color: var(--nav-link-color);
+  color: var(--paragraph-font);
+}
+
+.adventure-awaits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.adventure-awaits img {
+  width: 100%;
+  height: auto;
 }
