@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <meta name="description" content="White Water Rafting Website Contact Page">
+  <meta name="author" content="Daniel Selase Anyidoho">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.jpeg" alt="Logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Company Information</h2>
+      <p>Address: 1234 Rafting St, Adventureville, XX 12345</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: info@example.com</p>
+      <div id="map">
+        <!-- Embed your Google Map here -->
+      </div>
+    </section>
+
+    <section class="employee-profiles">
+      <h2>Employee Profiles</h2>
+      <div class="employee-profile-image">
+        <div class="employee">
+          <img src="images/employee1.jpg" alt="Employee 1">
+          <p>Job Title: Adventure Guide</p>
+        </div>
+        <div class="employee">
+          <img src="images/employee2.jpg" alt="Employee 2">
+          <p>Job Title: Rafting Instructor</p>
+        </div>
+        <div class="employee">
+          <img src="images/employee3.jpg" alt="Employee 3">
+          <p>Job Title: Customer Support</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-control">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-control">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-control">
+          <div>
+            <p>Purpose of Message:</p>
+          </div>
+          <div>
+            <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+            <label for="inquiry">General Inquiry</label>
+          </div>
+          <div>
+            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+            <label for="reservation">Reservation Question</label>
+          </div>
+        </div>
+        <div class="form-control">
+          <label for="suggestion">Website Suggestion</label>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-control">
+          <div><input type="checkbox" name="subscribe" value="yes" id="subscribe">
+            <label for="subscribe">
+              Please subscribe me to the monthly newsletter
+            </label>
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 | Rafting Site | Daniel Selase Anyidoho | WDD 130</p>
+    <nav class="sociallinks">
+      <a href="https://facebook.com"><img src="images/facebook_logo_icon.svg" alt="Facebook logo"></a>
+      <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram logo"></a>
+      <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter logo"></a>
+    </nav>
+  </footer>
+</body>
+
+</html>
