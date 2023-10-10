@@ -59,6 +59,10 @@ input {
   padding: 0.5rem;
 }
 
+textarea {
+  resize: none;
+}
+
 button {
   padding: 0.8rem;
   color: #FCEFF9;
