@@ -157,6 +157,10 @@ section h2 {
   justify-content: center;
 }
 
+.map iframe {
+  width: 100%;
+}
+
 form {
   max-width: 400px;
   margin: 0 auto;
