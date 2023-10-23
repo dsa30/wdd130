@@ -21,6 +21,13 @@ body {
   max-width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
+  color: var(--nav-hover-background-color);
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: var(--nav-hover-background-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,9 +54,73 @@ ul li {
   left: 5%;
 }
 
+.section-select {
+  padding: 50px 0 0 30px;
+}
+
+.section-select .rafting-title {
+  margin-bottom: 4rem;
+}
+
+.card-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-container .card-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #0056b3;
+}
+
+.card-img-1 {
+  background: url(../images/1-rafting.jpg) center center/cover;
+  padding: 100px;
+}
+
+.card-img-2 {
+  background: url(../images/2-rafting.jpg) center center/cover;
+  padding: 100px;
+}
+
+.card-img-3 {
+  background: url(../images/3-rafting.jpg) center center/cover;
+  padding: 100px;
+}
+
+/* Table Styles */
+.rafting-table {
+  width: 100%; /* Set the table width to 100% of its container */
+  border-collapse: collapse; /* Collapse table borders */
+  margin-bottom: 20px; /* Add some space below the table */
+}
+
+/* Style the table header row */
+.rafting-table thead {
+  background-color: #007BFF; /* Header background color */
+  color: #FFFFFF; /* Header text color */
+  font-weight: bold;
+}
+
+/* Style the table header cells */
+.rafting-table th {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style the table body rows */
+.rafting-table tbody tr:nth-child(even) {
+  background-color: #F2F2F2; /* Alternate row background color */
+}
+
+/* Style the table body cells */
+.rafting-table td {
+  padding: 10px;
+  text-align: left;
+}
+
 article {
   position: absolute;
-  background-color: rgba(27, 110, 182, 0.8);
   top: 40%; 
   color:#fff;
   padding: 1rem;
@@ -97,9 +168,8 @@ nav ul {
 }
 
 section {
-  background-color: var(--primary-color);
   padding: 2rem;
-  color: var(--nav-link-color);
+  color: var(--nav-hover-background-color);
 }
 
 .history {
@@ -201,15 +271,46 @@ textarea {
   resize: none;
 }
 
+/* Trips Styling */
+.hero {
+  background: url(../images/2-rafting.jpg) center center/cover;
+  height: 40vh;
+}
+
+.call-to-action {
+  text-align: center;
+}
+
+.btn-container a {
+  display: inline-block;
+  border-radius: 100px;
+  border: 2px solid #0056b3;
+}
+
 button {
   padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
+  background-color: transparent;
+  color: var(--nav-hover-background-color);
   border: none;
   width: 100%;
   cursor: pointer;
+  border-radius: 100px;
+  transition: all ease 0.3s;
 }
 
 button:hover {
   background-color: #0056b3;
+  color: white;
+}
+
+/* Trips Page Styling */
+.btn-container {
+  display: flex;
+  gap: 2rem;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.btn {
+  width: 14rem;
 }
