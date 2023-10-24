@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Rapids</title>
+  <meta name="description" content="White Water Rafting Website Home Page">
+  <meta name="author" content="Daniel Selase Anyidoho">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="images/logo.jpeg" alt="Logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <section class="hero-home">
+      <div class="overlay">
+        <h1 class="hero-heading">BOOK A TRIP</h1>
+      </div>
+  </section>
+  <main>
+      <div class="container">
+        <p>You can make reservations using our booking widgets below or by calling our reservation hotline at 500-153-0003. Please note that reservations made online must be made at least 3 days in advance. Availability may vary, and some dates may not be available if fully booked.
+        </p>
+  
+        <a href="trips.html" class="home-btn btn">
+          BOOK NOW
+        </a>
+      </div>
+      <section class="section-form">
+          <div class="container">
+            <h2>Contact Us</h2>
+        <form action="submit.php" method="post">
+            <div class="form-control">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-control">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+          </div>
+      </section>
+
+        <div class="container">
+          <div class="card-container">
+            <div>
+              <div class="home-card-img-1"></div>
+              <div class="card-content">
+                <h2>Enjoy the water</h2>
+              </div>
+              <p>Duration: 1 - 2 hours on the river</p>
+              <button class="card-btn">
+                VIEW
+              </button>
+            </div>
+            <div>
+              <div class="home-card-img-2"></div>
+              <div class="card-content">
+                <h2>Create Memories</h2>
+              </div>
+              <p>Duration: 2 - 4 hours on the river</p>
+              <button class="card-btn">
+                VIEW
+              </button>
+            </div>
+          </div>
+        </div>
+  </main>
+  <footer class="container">
+    <p>&copy; 2023 | Rafting Site | Daniel Selase Anyidoho | WDD 130</p>
+    <div>
+      <a href="images/wireframe.png" target="_blank">View Trips Wireframe</a>
+      <a href="images/homewireframe.png" target="_blank">View Home Wireframe</a>
+    </div>
+    <nav class="sociallinks">
+      <a href="https://facebook.com"><img src="images/facebook_logo_icon.svg" alt="Facebook logo"></a>
+      <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram logo"></a>
+      <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter logo"></a>
+    </nav>
+  </footer>
+</body>
+
+</html>

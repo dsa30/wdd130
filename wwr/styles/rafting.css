@@ -5,7 +5,7 @@
   --secondary-color:#E59025;
   --accent1-color:#e3e3e3;
   /* --accent1-color:#94B9AF; */
-  --accent2-color:#90A583;
+  --accent2-color:#f2f2f2;
 
   --heading-font: 'Roboto', sans-serif;;
   --paragraph-font: 'Poppins', sans-serif;
@@ -18,11 +18,15 @@
 
 body {
   font-family: var(--paragraph-font);
+  min-width: 100vh;
+  color: var(--nav-hover-background-color);
+  line-height: 1.7;
+}
+
+.container {
   max-width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
-  color: var(--nav-hover-background-color);
-  line-height: 1.7;
 }
 
 a {
@@ -38,6 +42,37 @@ ul li {
   list-style: none;
 }
 
+/* Home styles */
+.hero-home {
+  background: url(../images/3-rafting.jpg) center center/cover;
+  height: 50vh;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(34, 40, 43, 0.521);
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 5rem;
+  padding-top: 3rem;
+  color: var(--nav-link-color);
+  z-index: 10;
+}
+
+.home-btn {
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+}
+
 .hero {
   position: relative;
 }
@@ -45,7 +80,7 @@ ul li {
 .hero > img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 50%;
 }
 
 .hero h1 {
@@ -62,64 +97,7 @@ ul li {
   margin-bottom: 4rem;
 }
 
-.card-container {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.card-container .card-btn {
-  padding: 0.5rem 1rem;
-  border: 2px solid #0056b3;
-}
-
-.card-img-1 {
-  background: url(../images/1-rafting.jpg) center center/cover;
-  padding: 100px;
-}
-
-.card-img-2 {
-  background: url(../images/2-rafting.jpg) center center/cover;
-  padding: 100px;
-}
-
-.card-img-3 {
-  background: url(../images/3-rafting.jpg) center center/cover;
-  padding: 100px;
-}
-
-/* Table Styles */
-.rafting-table {
-  width: 100%; /* Set the table width to 100% of its container */
-  border-collapse: collapse; /* Collapse table borders */
-  margin-bottom: 20px; /* Add some space below the table */
-}
-
-/* Style the table header row */
-.rafting-table thead {
-  background-color: #007BFF; /* Header background color */
-  color: #FFFFFF; /* Header text color */
-  font-weight: bold;
-}
-
-/* Style the table header cells */
-.rafting-table th {
-  padding: 10px;
-  text-align: left;
-}
-
-/* Style the table body rows */
-.rafting-table tbody tr:nth-child(even) {
-  background-color: #F2F2F2; /* Alternate row background color */
-}
-
-/* Style the table body cells */
-.rafting-table td {
-  padding: 10px;
-  text-align: left;
-}
-
-article {
+.hero article {
   position: absolute;
   top: 40%; 
   color:#fff;
@@ -128,6 +106,7 @@ article {
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
+  background-color: #22282b;
 }
 
 article img {
@@ -232,7 +211,7 @@ section h2 {
 }
 
 form {
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
   background-color: var(--accent2-color);
   padding: 2rem;
@@ -272,7 +251,15 @@ textarea {
 }
 
 /* Trips Styling */
-.hero {
+nav li {
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+nav li:hover {
+  border-bottom: 2px solid #0056b3;
+}
+.trips-hero {
   background: url(../images/2-rafting.jpg) center center/cover;
   height: 40vh;
 }
@@ -281,24 +268,96 @@ textarea {
   text-align: center;
 }
 
-.btn-container a {
-  display: inline-block;
-  border-radius: 100px;
+.card-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 4rem;
+}
+
+.card-container .card-btn {
+  padding: 0.5rem 1rem;
   border: 2px solid #0056b3;
 }
 
+.home-card-img-1 {
+  background: url(../images/1-rafting.jpg) center center/cover;
+}
+
+.home-card-img-2 {
+  background: url(../images/3-rafting.jpg) center center/cover;
+}
+
+.home-card-img-1,
+.home-card-img-2,
+.card-img-1,
+.card-img-2,
+.card-img-3 {
+  
+  padding: 100px;
+}
+
+.card-img-1 {
+  background: url(../images/1-rafting.jpg) center center/cover;
+}
+
+.card-img-2 {
+  background: url(../images/2-rafting.jpg) center center/cover;
+}
+
+.card-img-3 {
+  background: url(../images/3-rafting.jpg) center center/cover;
+}
+
+/* Table Styles */
+.rafting-table {
+  width: 100%; 
+  border-collapse: collapse; 
+  margin-bottom: 20px; 
+}
+
+
+.rafting-table thead {
+  background-color: #007BFF; 
+  color: #FFFFFF; 
+  font-weight: bold;
+}
+
+.rafting-table th {
+  padding: 10px;
+  text-align: left;
+}
+
+
+.rafting-table tbody tr:nth-child(even) {
+  background-color: #F2F2F2; 
+}
+
+
+.rafting-table td {
+  padding: 10px;
+  text-align: left;
+}
+
 button {
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 100px;
+  display: inline-block;
   padding: 10px 20px;
   background-color: transparent;
   color: var(--nav-hover-background-color);
   border: none;
   width: 100%;
   cursor: pointer;
+  border: 2px solid #0056b3;
   border-radius: 100px;
   transition: all ease 0.3s;
 }
 
-button:hover {
+.btn:hover {
   background-color: #0056b3;
   color: white;
 }
@@ -313,4 +372,18 @@ button:hover {
 
 .btn {
   width: 14rem;
+}
+
+.card-btn {
+  transition: all ease 0.3s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  width: 100px;
+  background-color: transparent;
+  color: var(--nav-hover-background-color);
+}
+
+.card-btn:hover {
+  background-color: #0056b3;
+  color: white;
 }
